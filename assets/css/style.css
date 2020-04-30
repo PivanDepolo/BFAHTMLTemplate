@@ -1,0 +1,478 @@
+/* CSS Reset */
+html, body, div, span, h1, h2, h3, p, a, img, footer, header, nav, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+footer, header, nav {
+  display: block;
+}
+/* End of CSS Reset */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+footer, header, main, nav {
+  display: block;
+}
+body {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: Georgia, sans-serif;
+  font-weight: 400;
+  color: #f1e8e3;
+  background-color: #15101a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+img {
+  border: none;
+}
+h1, h2, h3  {
+    font-family: monospace;
+    margin-bottom: 10px;
+    line-height: 0.8;
+    display: block;
+    color: #ffae00;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 200ms ease-in-out;
+    letter-spacing: -5px;
+    text-shadow: 0 0 10px black;
+}
+h1 { 
+    font-size: 54px; 
+} 
+h2 { 
+    font-size: 40px;
+}
+h3 { 
+    font-size: 36px;
+}
+
+.clear::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #f1e8e3;
+    transition: all 200ms ease-in-out;
+}
+a:hover {
+    filter: brightness(130%);
+}
+
+p {
+    margin-bottom: 10px;
+}
+/*==========BUTTONS STYLES==========*/
+.btn { 
+    display: block;
+    width: 216px;
+    height: 42px;
+    background: #ffae00;
+    line-height: 42px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: monospace;
+    color: #211d1c;
+    text-shadow: 0 -1px 1px white;
+    text-transform: uppercase;
+    margin: 5px auto;
+    letter-spacing: -3px;
+    box-shadow: 0 0 10px black;
+}
+.btn.big {
+    margin-top: 15px;
+    font-size: 32px;
+	line-height: 104px;
+    height: 104px;
+    width: 350px;
+    background: url('../images/buttons/btn-big.webp') center center no-repeat;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.btn.more {
+    width: 110px;
+    height: 28px;
+    line-height: 31px;
+    background: #7f828d;
+    font-family: monospace;
+    font-size: 12px;
+    color: #1d1a17;
+    letter-spacing: 0;
+    margin: 0;
+}
+.btn.trans {
+    background: transparent;
+    color: #ffd84e;
+    text-shadow: 0 0 10px black;
+}
+.btn:hover {
+    letter-spacing: 0px;
+}
+
+/*==========PAGES STYLES==========*/
+.container {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    background: #150a18 url('../images/header.webp') top center no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid #2d2532;
+}
+
+header nav {	
+	width: 100%;
+    background-image: url(../images/nav-bg.webp);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    height: 69px;
+    border-bottom: 1px solid rgba(53,46,62,0.9);
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 275px;
+}
+header nav:after {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    height: 101px;
+    background: url('../images/nav-bg-after.webp') top center no-repeat;
+    content: '';
+}
+header nav .m-left {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+header nav .m-right {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+header nav .m-left a, header nav .m-right a {
+    line-height: 68px;
+    display: inline-block;
+}
+header nav .m-left a {
+    margin-right: 50px;
+}
+header nav .m-right a {
+    margin-left: 50px;
+}
+header nav a.active {
+    color: #ffae00;
+}
+header nav a:hover {
+    color: #ffae00;
+}
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 324px;
+    height: 157px;
+	margin-top: -30px;
+    margin-left: -162px;
+    display: block;
+    background: url('../images/logo.webp') top center no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+    
+header .about {
+    background: url('../images/playnow-bg.webp') bottom center no-repeat;
+    min-height: 210px;
+}
+header .top-block .date {
+    font-size: 14px;
+    display: block;
+    color: #f8f8f8;
+    padding-left: 18px;
+    background: url('../images/date.webp') center left no-repeat;
+}
+header .top-block .countdown-block {
+    width: 50%;
+    height: 301px;
+    padding: 30px;
+    padding-top: 35px;
+    padding-right: 35px;
+    float: left;
+    background: url('../images/countdown-bg.webp') top center no-repeat;
+	background-size: cover;
+    border: 1px solid #383141;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+}
+header .top-block .forum-block {
+    width: 50%;
+    float: left;
+    background: #1b171f;
+    text-align: left;
+    border: 1px solid #383141;
+    border-left: none;
+    border-bottom: none;
+}
+header .top-block .forum-block a {
+    display: block;
+    border-bottom: 1px solid #383141;
+    height: 75px;
+    overflow: hidden;
+    position: relative;
+    line-height: 75px;
+    font-size: 20px;
+    color: #b99f9b;
+    padding-left: 90px;
+    padding-right: 150px;
+}
+header .top-block .forum-block a img {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 17px;
+    left: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+header .top-block .forum-block a .name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+header .top-block .forum-block a .date {
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+header .top-block .forum-block a:hover .date {
+    display: none;
+}
+header .top-block .forum-block a .more {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header .top-block .forum-block a:hover .more {
+    display: block;
+}
+header .top-block .forum-block a:hover .more:hover {
+    filter: brightness(130%);
+}
+header .top-block .forum-block a:hover {
+    background: #2a2431;
+    color: #f1e8e3;
+    filter: none;
+}
+    
+main {
+    background: url('../images/content.webp') top center no-repeat;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+.seperator {
+	background-image: url(../images/separator.webp);
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 15px;
+}
+main .c-block {
+    text-shadow: 0 0 10px black;
+}
+main .c-block .block-big:hover {
+    filter: brightness(120%);
+}
+main .c-block .block-big {
+    transition: all 200ms ease-in-out;
+    display: inline-block;
+    width: 100%;
+    height: 426px;
+    float: right;
+    border: 1px solid #574c61;
+    margin-left: 20px;
+    text-align: center;
+    background: url('../images/block-big.webp') center center no-repeat;
+    background-size: cover;
+    padding: 20px;
+    padding-top: 115px;
+}
+main .c-block p {
+    font-size: 24px;
+    color: #ddbbb5;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    position: relative;
+    height: 150px;
+    margin-top: -150px;
+    border-top: 1px solid #2d2532;
+    background: rgba(27,23,31,0.9);
+    padding: 40px 0;
+    background-image: url(../images/footer-bg.webp);
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+footer .copy {
+    margin-top:40px;
+    color: #9c9694;
+    font-size: 14px;
+    vertical-align: top;
+    display: inline-block;
+    float: left;
+    width: 33.3333%;
+}
+footer .copy span {
+    display: block;
+    color: #b99f9b;
+    opacity: 0.5;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+footer .social {
+    text-align: right;
+    vertical-align: top;
+    display: inline-block;
+    float: left;
+    width: 33.3333%;
+}
+footer .social p a {
+    opacity: 0.5;
+    margin-left: 20px;
+}
+footer .social .copy-r {
+    opacity: 0.3;
+}
+footer .social a:hover {
+    opacity: 1;
+}
+footer .menu {
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    float: left;
+    width: 33.3333%;
+    background: url('../images/logo-small.webp') center center no-repeat;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-top: -25px;
+    padding: 15px 0;
+}
+footer .menu a {
+    color: #f1e8e3;
+    display: block;
+    opacity: 0.5;
+}
+footer .menu a:hover {
+    opacity: 1;
+}
+footer .menu .m-left, footer .menu .m-right {
+    width: 110px;
+    display: inline-block;
+}
+footer .menu .m-left {
+    float: left;
+    text-align: right;
+}
+footer .menu .m-right {
+    float: right;
+    text-align: left;
+}
+    
+
+
+@media (max-width: 1279px) {
+    .container { width: 980px; }
+    header nav { font-size: 18px; }
+    header nav .m-left a {
+        margin-right: 25px;
+    }
+    header nav .m-right a {
+        margin-left: 25px;
+    }
+    header .top-block .countdown-block { padding-right: 30px; }
+    main .c-block .block-big {
+        padding-top: 80px;
+    }
+    
+}
+@media (max-width: 999px) {
+    .container { width: 620px; }
+    header { background-position: 50% 118px; }
+    header nav { height: 130px; font-size: 22px; background: rgba(27,23,31,1);}
+    header nav:after { top: 129px; }
+    header .logo { top: 130px; }
+    header nav .m-left a, header nav .m-right a {  line-height: 40px; display: block; }
+    header nav .m-left { text-align: right; width: 48%;}
+    header nav .m-right { text-align: left; width: 48%; }
+    header nav a.active { border-bottom: none; }
+    header .top-block .countdown-block, header .top-block .forum-block { width: 100%; float: none}
+    main .c-block .block-big { width: 100%; float: none; margin: 0;  margin-bottom: 20px; }
+    main { background-size: cover; }
+    footer { height: auto; }
+    footer .copy, footer .menu, footer .social { width: 100%; float: none; text-align: center; }
+    footer .menu { margin: 20px 0; }
+    footer .social p a { margin: 0 10px; }
+}
+@media (max-width: 639px) {
+    html, body, nav { width: 620px; }
+}
+
+#clockdiv{
+    margin-top:32px;
+    margin-bottom:32px;
+	font-family: sans-serif;
+	color: #fff;
+	display: block;
+    position: relative;
+	font-weight: 100;
+	text-align: center;
+	font-size: 24px;
+}
+
+#clockdiv > div{
+	padding: 8px;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+}
+
+#clockdiv div > span{
+    width:57px;
+	padding: 15px;
+	border-radius: 3px;
+	background: black;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
