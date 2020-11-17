@@ -332,7 +332,7 @@ main .c-block p {
 footer {
     position: relative;
     height: 150px;
-    margin-top: -150px;
+    margin-top: auto;
     border-top: 1px solid #2d2532;
     background: rgba(27,23,31,0.9);
     padding: 40px 0;
@@ -500,4 +500,10 @@ input {
     padding: 0 10px;
     text-align: center;
     margin-bottom: 20px;
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
